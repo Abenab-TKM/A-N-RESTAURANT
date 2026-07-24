@@ -32,6 +32,14 @@ nav a{
     flex:1 1 320px;
 }
 
+.hero-image video{
+    width:100%;
+    max-width:480px;
+    border-radius:10px;
+    display:block;
+    margin:0 auto;
+}
+
 .hero img{
     width:100%;
     max-width:320px;
