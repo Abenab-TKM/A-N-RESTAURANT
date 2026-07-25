@@ -1,67 +1,17 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>A&N Restaurant — Food Categories</title>
-</head>
-<body>
-	<header>
-		<h1>A&N Restaurant</h1>
-		<p>Click a cuisine to show only that food type.</p>
-	</header>
-
-	<main>
-		<div>
-			<button type="button" data-filter="all">All</button>
-			<button type="button" data-filter="ethiopian">Ethiopian</button>
-			<button type="button" data-filter="chinese">Chinese</button>
-			<button type="button" data-filter="italian">Italian</button>
-		</div>
-
-		<section id="menu-items">
-			<article data-category="ethiopian">
-				<h2>Ethiopian Combo</h2>
-				<p>Injera with doro wat, tibs, and lentils.</p>
-			</article>
-			<article data-category="chinese">
-				<h2>Chinese Noodles</h2>
-				<p>Stir-fried noodles with vegetables and soy sauce.</p>
-			</article>
-			<article data-category="italian">
-				<h2>Italian Pasta</h2>
-				<p>Classic pasta with tomato sauce and parmesan.</p>
-			</article>
-			<article data-category="ethiopian">
-				<h2>Spicy Ethiopian Stew</h2>
-				<p>Rich berbere stew with vegetables and chickpeas.</p>
-			</article>
-			<article data-category="chinese">
-				<h2>Chinese Dumplings</h2>
-				<p>Steamed dumplings filled with pork and greens.</p>
-			</article>
-			<article data-category="italian">
-				<h2>Italian Salad</h2>
-				<p>Fresh greens with olive oil, basil, and mozzarella.</p>
-			</article>
-		</section>
-	</main>
-
-	<footer>© A&N Restaurant</footer>
-
-	<script>
-		const buttons = document.querySelectorAll('button[data-filter]');
-		const items = document.querySelectorAll('#menu-items article');
-
-		buttons.forEach(button => {
-			button.addEventListener('click', () => {
-				const filter = button.getAttribute('data-filter');
-				items.forEach(item => {
-					const category = item.getAttribute('data-category');
-					item.style.display = filter === 'all' || category === filter ? '' : 'none';
-				});
-			});
-		});
-	</script>
-</body>
+<h1>try some of our cuisines</h1>
+<p>you can eat some delicious dishes from various cultures!</p>
+<label for="food">cuisines</label>
+<input type="text" id="food"><br>
+<label for="national cuisines">National Cuisines</label>
+<select>
+	<option>italian</option>
+	<option>chinese</option>
+	<option>ethiopian</option>
+	<option> all</option><br>
+</select>
+<br>
+<img src="ala grica.jpg">
+<link rel="icon" type="image/png" href="logo.png">
 </html>
