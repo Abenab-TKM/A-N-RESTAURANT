@@ -1,0 +1,106 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f8f8f8;
+}
+
+header{
+     background:linear-gradient(135deg,#8B0000 0%,#db4747,rgb(97, 8, 8) 100%);
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:2rem;
+    padding:40px 20px;
+    text-align:left;
+}
+
+.hero-image,
+.text{
+    flex:1 1 320px;
+}
+
+.hero-image video{
+    width:100%;
+    max-width:480px;
+    border-radius:10px;
+    display:block;
+    margin:0 auto;
+}
+
+.hero img{
+    width:100%;
+    max-width:320px;
+    border-radius:10px;
+    display:block;
+    margin:0 auto;
+}
+
+.text{
+    margin-top:0;
+}
+
+.hero-actions{
+    margin-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+}
+
+button{
+    background:#ff9900;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.order-button{
+    background:#ff9900;
+}
+
+.reserve-button{
+    background:#8b0000;
+}
+
+button:hover{
+    opacity:0.95;
+}
+
+@media (max-width: 760px) {
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-actions{
+        justify-content:center;
+    }
+}
+
+.about{
+    text-align:center;
+    padding:30px;
+}
+
+footer{
+    background:#8B0000;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
