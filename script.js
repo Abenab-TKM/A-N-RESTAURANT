@@ -8,3 +8,22 @@
     heroVideo.load();
     heroVideo.play();
   });
+ 
+
+
+function toggleMode() {
+    let body = document.body;
+    let button = document.getElementById("modeBtn");
+
+    body.classList.toggle("dark-mode");
+
+    if (button) {
+        if (body.classList.contains("dark-mode")) {
+            button.innerHTML = "☀️ ";
+        } else {
+            button.innerHTML = "🌙 ";
+        }
+    }
+}
+
+

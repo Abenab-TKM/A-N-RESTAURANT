@@ -5,7 +5,7 @@ body{
 }
 
 header{
-     background:linear-gradient(135deg,#8B0000 0%,#db4747,rgb(97, 8, 8) 100%);
+     background:linear-gradient(135deg,#976767 0%,#db4747,rgb(97, 8, 8),rgba(65, 36, 36, 0.781) 100%);
     color:white;
     padding:15px;
     text-align:center;
@@ -39,6 +39,7 @@ nav a{
     display:block;
     margin:0 auto;
 }
+
 
 .hero img{
     width:100%;
@@ -104,3 +105,30 @@ footer{
     padding:15px;
     margin-top:20px;
 }
+
+.dark-mode{
+    background:#1f1f1f;
+    color:#f1f1f1;
+}
+
+.dark-mode header{
+    background:linear-gradient(135deg,#2f2f2f 0%,#4d4d4d,rgba(32, 32, 32, 0.9) 100%);
+}
+
+.dark-mode nav a,
+.dark-mode footer,
+.dark-mode button{
+    color:#f1f1f1;
+}
+
+.dark-mode button{
+    background:#444;
+}
+
+.dark-mode .hero,
+.dark-mode .about{
+    background:transparent;
+}
+
+
+
