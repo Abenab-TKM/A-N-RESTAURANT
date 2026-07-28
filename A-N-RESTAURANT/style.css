@@ -1,0 +1,134 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f8f8f8;
+}
+
+header{
+     background:linear-gradient(135deg,#976767 0%,#db4747,rgb(97, 8, 8),rgba(65, 36, 36, 0.781) 100%);
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:2rem;
+    padding:40px 20px;
+    text-align:left;
+}
+
+.hero-image,
+.text{
+    flex:1 1 320px;
+}
+
+.hero-image video{
+    width:100%;
+    max-width:480px;
+    border-radius:10px;
+    display:block;
+    margin:0 auto;
+}
+
+
+.hero img{
+    width:100%;
+    max-width:320px;
+    border-radius:10px;
+    display:block;
+    margin:0 auto;
+}
+
+.text{
+    margin-top:0;
+}
+
+.hero-actions{
+    margin-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+}
+
+button{
+    background:#ff9900;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.order-button{
+ background:linear-gradient(135deg,orange 0%,rgba(230, 190, 116, 0.957), rgba(255, 165, 0, 0.781) 100%);
+}
+
+.reserve-button{
+    background:linear-gradient(135deg,#8b0000 0%,#b22222,rgb(139, 0, 0),rgba(139, 0, 0, 0.781) 100%);
+}
+
+button:hover{
+    opacity:0.95;
+}
+
+@media (max-width: 760px) {
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-actions{
+        justify-content:center;
+    }
+}
+
+.about{
+    text-align:center;
+    padding:30px;
+}
+
+footer{
+    background:#8B0000;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+.dark-mode{
+    background:#1f1f1f;
+    color:#f1f1f1;
+}
+
+.dark-mode header{
+    background:linear-gradient(135deg,#2f2f2f 0%,#4d4d4d,rgba(32, 32, 32, 0.9) 100%);
+}
+
+.dark-mode nav a,
+.dark-mode footer,
+.dark-mode button{
+    color:#f1f1f1;
+}
+
+.dark-mode button{
+    background:#444;
+}
+
+.dark-mode .hero,
+.dark-mode .about{
+    background:transparent;
+}
+
+
+
