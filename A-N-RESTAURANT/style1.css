@@ -1,0 +1,69 @@
+body{
+    background-color: #f8f8f8;
+    margin: 0;
+    
+    font-family: ,serif;
+    left: 200px;
+}
+header{
+    background: linear-gradient(135deg, #976767 0%, #db4747, rgb(97, 8, 8), rgba(65, 36, 36, 0.781) 100%);
+    color: white;
+    
+     padding: 15px;
+   border-bottom-left-radius:  5px;
+   border-bottom-right-radius: 5px;
+    text-align: center;
+
+}
+hero{
+    border-radius: 10px;
+    height:100px ;
+     align-items:center;
+    padding: 15px;
+     text-align: center;
+}
+img{
+border-radius: 100px;
+ align-items:center;
+    padding: 15px;
+justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+     text-align: center;
+}
+footer{
+    background: linear-gradient(135deg, #976767 0%, #db4747, rgb(97, 8, 8), rgba(65, 36, 36, 0.781) 100%);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+}
+h1{
+    text-shadow: 3px 3px 25px ;
+     text-align: 20px left;
+     padding: 15px;}
+p{
+     text-align: 20px left;
+     padding: 15px;
+}
+h2{
+     text-align: 20px left;
+     padding: 15px;
+}
+button{
+    background-color: #db4747;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}   

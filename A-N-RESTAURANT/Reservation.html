@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation | A&N Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>A&N Restaurant</h1>
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="A-N-RESTAURANT/Menu.html">Menu</a>
+        <a href="#">About</a>
+        <a href="Reservation.html">Reservation</a>
+        <button type="button" onclick="toggleMode()" id="modeBtn" aria-label="Switch to dark mode">🌙</button>
+    </nav>
+</header>
+
+<main class="reservation-page">
+    <section class="reservation-hero">
+        <div class="reservation-card">
+            <p class="eyebrow">Book your table</p>
+            <h2>Reserve a table for your next visit</h2>
+            <p>Create a reservation for breakfast, lunch, dinner, or a private celebration. We will confirm your booking as soon as possible.</p>
+
+            <form id="reservationForm">
+                <div class="form-grid">
+                    <label>
+                        Full name
+                        <input type="text" name="name" placeholder="Your name" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" placeholder="you@example.com" required>
+                    </label>
+                    <label>
+                        Phone number
+                        <input type="tel" name="phone" placeholder="+251 9xx xxx xxx" required>
+                    </label>
+                    <label>
+                        Number of guests
+                        <select name="guests" required>
+                            <option value="">Select</option>
+                            <option value="2">2 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="6">6 Guests</option>
+                            <option value="8">8 Guests</option>
+                            <option value="10+">10+ Guests</option>
+                        </select>
+                    </label>
+                    <label>
+                        Date
+                        <input type="date" name="date" required>
+                    </label>
+                    <label>
+                        Time
+                        <input type="time" name="time" required>
+                    </label>
+                    <label>
+                        Occasion
+                        <select name="occasion">
+                            <option value="">Select an occasion</option>
+                            <option value="Dinner">Dinner</option>
+                            <option value="Birthday">Birthday</option>
+                            <option value="Anniversary">Anniversary</option>
+                            <option value="Business">Business</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </label>
+                    <label>
+                        Special request
+                        <input type="text" name="request" placeholder="Window seat, cake, etc.">
+                    </label>
+                </div>
+
+                <label class="checkbox-row">
+                    <input type="checkbox" name="terms" required>
+                    I agree to receive reservation confirmation updates.
+                </label>
+
+                <button class="reserve-button" type="submit">Book Reservation</button>
+                <div id="confirmationMessage" class="confirmation-message" aria-live="polite"></div>
+            </form>
+        </div>
+
+        <div class="info-card">
+            <p class="eyebrow">Reservation info</p>
+            <h3>What to expect</h3>
+            <div class="reservation-info">
+                <div>
+                    <strong>Hours</strong>
+                    <p>Mon–Sun<br>7:00 AM – 10:00 PM</p>
+                </div>
+                <div>
+                    <strong>Location</strong>
+                    <p>123 Food Street<br>Addis Ababa</p>
+                </div>
+                <div>
+                    <strong>Contact</strong>
+<p>+251 911 222 333<br>info@anrestaurant.com</p>
+</div>
+</div>
+<div class="reservation-summary">
+<h3>Latest booking</h3>
+    <p id="bookingSummary">Loading latest reservation…</p>
+    </div>
+    </div>
+ </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 A&N Restaurant. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

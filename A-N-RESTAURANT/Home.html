@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A&N Restaurant</title>
-    
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
     <h1>A&N Restaurant</h1>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="Home.html">Home</a>
+        <a href="A-N-RESTAURANT/Menu.html">Menu</a>
+        <a href="A-N-RESTAURANT/About.html">About</a>
+        <a href="Reservation.html">Reservation</a>
         <button type="button" onclick="toggleMode()" id="modeBtn" aria-label="Switch to dark mode">🌙</button>
     </nav>
 </header>
@@ -35,8 +34,8 @@
             We look forward to welcoming you and providing great food, excellent service, and a warm, friendly atmosphere that makes you feel right at home.
         </p>
         <div class="hero-actions">
-            <button class="order-button">Order Now</button>
-            <button class="reserve-button">Reserve Table</button>
+            <button class="order-button" type="button">Order Now</button>
+            <button class="reserve-button" type="button" onclick="window.location.href='Reservation.html'">Reserve Table</button>
         </div>
     </div>
 </section>

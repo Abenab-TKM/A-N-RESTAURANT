@@ -112,7 +112,7 @@ footer{
 }
 
 .dark-mode header{
-    background:linear-gradient(135deg,#2f2f2f 0%,#4d4d4d,rgba(32, 32, 32, 0.9) 100%);
+    background:linear-gradient(135deg,#2f2f2f 0%,#4d4d4d,rgba(32, 32, 32, 0.9),#2b2828 100%);
 }
 
 .dark-mode nav a,
