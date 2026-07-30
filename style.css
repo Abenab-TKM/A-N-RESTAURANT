@@ -247,5 +247,25 @@ textarea{
     }
 }
 
+/* Mobile-friendly helpers */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Improve touch behavior and tap targets */
+button, a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    touch-action: manipulation;
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 14px 20px;
+        font-size: 18px;
+    }
+}
+
 
 
