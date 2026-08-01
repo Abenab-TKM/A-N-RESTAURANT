@@ -22,3 +22,21 @@ function toggleMode() {
   }
 }
 
+// Important banner close behavior (persist dismissed state)
+(function(){
+  const banner = document.getElementById('important-banner');
+  const closeBtn = document.getElementById('close-banner');
+  try{
+    if(!banner) return;
+    if(localStorage.getItem('a_n_hideBanner')){
+      banner.style.display = 'none';
+    }
+    if(closeBtn){
+      closeBtn.addEventListener('click', function(){
+        banner.style.display = 'none';
+        try{ localStorage.setItem('a_n_hideBanner','1'); }catch(e){}
+      });
+    }
+  }catch(e){}
+})();
+

@@ -11,6 +11,23 @@ header{
     text-align:center;
 }
 
+.important-banner{
+    background:#fff4e5;
+    color:#5a3300;
+    border:1px solid #ffd8a8;
+    padding:14px 18px;
+    text-align:center;
+}
+
+.important-banner button{
+    background:transparent;
+    border:none;
+    color:#5a3300;
+    font-size:18px;
+    cursor:pointer;
+    margin-left:12px;
+}
+
 nav a{
     color:white;
     text-decoration:none;
@@ -91,6 +108,26 @@ button:hover{
     .hero-actions{
         justify-content:center;
     }
+}
+
+.specials{
+    background:#fff3e0;
+    color:#4d2f1f;
+    text-align:center;
+    padding:28px 24px;
+    margin:20px auto;
+    max-width:900px;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.specials h2{
+    margin-bottom:10px;
+}
+
+.specials p{
+    margin:0;
+    line-height:1.7;
 }
 
 .about{
@@ -265,6 +302,30 @@ button, a {
         padding: 14px 20px;
         font-size: 18px;
     }
+}
+
+/* Important banner */
+.important-banner{
+    background: linear-gradient(90deg,#fff4e5,#fffbe6);
+    border-left: 6px solid #ff9900;
+    color:#333;
+    padding:12px 18px;
+    text-align:center;
+    position:relative;
+}
+.important-banner p{
+    margin:0;
+    font-weight:600;
+}
+.important-banner #close-banner{
+    position:absolute;
+    right:8px;
+    top:8px;
+    background:transparent;
+    border:none;
+    font-size:20px;
+    line-height:1;
+    cursor:pointer;
 }
 
 
